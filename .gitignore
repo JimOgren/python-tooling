@@ -1,2 +1,9 @@
 # Virtual environment
 .env*
+
+# files from installing local package
+*.egg
+*.egg-info
+
+# Python caches
+__pycache__/
