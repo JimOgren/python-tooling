@@ -8,5 +8,8 @@
 # Python caches
 __pycache__/
 
+# test coverage
+.coverage
+
 # untrack data files, uncomment to activate
 # data/

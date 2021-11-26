@@ -1,5 +1,5 @@
-SRC_DIR = src/
-NOTEBOOK_DIR = notebooks/
+SRC_DIR = src
+NOTEBOOK_DIR = notebooks
 
 create-env:
 	conda create --prefix ./.env python=3.9
@@ -17,3 +17,6 @@ format:
 
 lint:
 	pylint --rcfile=setup.cfg $(SRC_DIR)
+
+test:
+	pytest --cov=$(SRC_DIR) $(SRC_DIR)/tests/
