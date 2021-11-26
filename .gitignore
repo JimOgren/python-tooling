@@ -7,3 +7,6 @@
 
 # Python caches
 __pycache__/
+
+# untrack data files, uncomment to activate
+# data/
