@@ -5,3 +5,9 @@ create-env:
 install:
 	pip install -r requirements.txt
 	pip install -e .
+
+format:
+	isort src/
+	black src/
+	nbqa isort notebooks/
+	nbqa black notebooks/
