@@ -12,10 +12,10 @@ Template for data science projects including automated tooling such as formattin
 ├── requirements.txt
 ├── setup.cfg
 ├── setup.py
-├── src
-│   ├── tests
-│   │   └── test_utils.py
-│   └── utils.py
+└── src
+    ├── tests
+    │   └── test_utils.py
+    └── utils.py
 ```
 Jupyter notebooks are put in the `notebooks/` directory and may import functions, classes etc. from modules placed in the `src/` directory. To handle imports in a convenient way, `src` is installed as a local package. The basic idea is that you can have many different notebooks for testing different things in the directory `notebooks/` and some will utilize the same functions or classes. To maximize reusability, functions and classes should be defined in clean, well-formatted and tested code placed in `src/` directory.
 
