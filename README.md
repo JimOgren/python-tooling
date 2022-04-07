@@ -34,3 +34,6 @@ Do not forget to activate the environment and select the correct kernel when run
 - `make test` will run *pytest* and all tests defined in `src/tests/`
 
 Linting is not applied to notebooks since it is a bit too strict and not always suitable considering how notebooks are used. But the option exists and you can use `nbqa pylint --rcfile=setup.cfg notebooks/` to run linter on notebooks as well. 
+
+## Docker image
+The `Dockerfile` contains a template for making a docker image containing the python dependencies, including local package in `src`. To build the docker image use: `docker build -t <tag_name>.`. This image can be included in an image for an app using `FROM <tag_name>` in the dockerfile for the app. 
